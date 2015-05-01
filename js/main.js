@@ -61,15 +61,15 @@ $(function() {
 
         ball.css("left", (x + "px"))
             .css("top", (y + "px"))
-            .css("background-color", "rgb(" + intensity(vx) + ", 0, " + intensity(vy) + ")");
+            .css("background-color", "rgb(" + intensity() + ", 0, " + (255 - intensity()) + ")");
     }
 
     function at(a) {
         return a / FPS;
     }
 
-    function intensity(v) {
-        return Math.floor(Math.abs(v)/20.0 * 255);
+    function intensity() {
+        return Math.floor((Math.abs(vx) + Math.abs(vy))/40.0 * 255);
     }
 
     function v(velocity, acceleration) {
