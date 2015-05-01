@@ -87,6 +87,10 @@ $(function() {
         setTimeout(tick, 1000/FPS);
     }
 
-    tick();
+    $("#info").find("button").click(function() {
+        $("#modal").fadeOut(500);
+        setTimeout(tick(), 500);
+    });
+
 });
 
