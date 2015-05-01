@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+#stats {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    z-index: 100;
+}
+
+#stats p {
+    font-family: 'Roboto', sans-serif;
+    margin: 4px;
+    font-size: 1.6em;
+}
+
+#ball {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+    background-color: rgb(255, 0, 255);
+    border-radius: 50%;
+}
