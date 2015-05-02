@@ -44,19 +44,19 @@ $(function() {
 
         if (x + 75 > width) {
             x = width - 75;
-            vx = 0;
+            vx = -0.8 * vx;
         }
         else if (x - 75 < 0) {
             x = 75;
-            vx = 0;
+            vx = -0.8 * vx;
         }
         if (y + 75 > height) {
             y = height - 75;
-            vy = 0;
+            vy = -0.8 * vy;
         }
         else if (y - 75 < 0) {
             y = 75;
-            vy = 0;
+            vy = -0.8 * vy;
         }
 
         ball.css("left", (x + "px"))
